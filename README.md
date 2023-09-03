@@ -1,79 +1,111 @@
-<p align="center">
-  <picture>
-    <img alt="Textbase python library" src="assets/logo.svg" width="352" height="59" style="max-width: 100%;">
-  </picture>
-  <br/>
-  <br/>
-</p>
+# GIT-BOT 🤖
 
-<p align="center">
-    <a href="https://docs.textbase.ai">
-        <img alt="Documentation" src="https://img.shields.io/website/http/huggingface.co/docs/transformers/index.svg?down_color=red&down_message=offline&up_message=online">
-    </a>
-</p>
+GIT-BOT is your personal GitHub profile analyzer powered by AI! It's a Python-based chatbot designed to dive deep into your GitHub profile and provide insightful information. Let's explore some of its amazing features! 🚀
 
-<h3 align="center">
-    <p>✨ Textbase is a framework for building chatbots using NLP and ML. ✨</p>
-</h3>
+## Purpose 🎯
 
-<h3 align="center">
-    <a href="https://textbase.ai"><img src="assets/banner.png"></a>
-</h3>
+GIT-BOT serves a noble purpose: to help you gain valuable insights into your GitHub profile. Whether you're a developer curious about your project complexity or just want to know more about your GitHub repositories, GIT-BOT has got you covered! 📊
 
-Just implement the `on_message` function in `main.py` and Textbase will take care of the rest :)
+## Features 🌟
 
-Since it is just Python you can use whatever models, libraries, vector databases and APIs you want.
+GIT-BOT offers a wide range of features to make your GitHub profile analysis a breeze:
 
-Coming soon:
-- [x] [PyPI package](https://pypi.org/project/textbase-client/)
-- [x] Easy web deployment via [textbase deploy](/docs/deployment/deploy-from-cli)
-- [ ] SMS integration
-- [ ] Native integration of other models (Claude, Llama, ...)
+- Analyzes your GitHub profile 🕵️‍♂️
+- Assesses the complexity of each repository 🧩
+- Calculates a profile score based on repository complexity 📈
+- Reveals the most complex GitHub repository you own 🏆
+- Highlights the top three repositories 🥇🥈🥉
 
-![Demo Deploy GIF](assets/textbase-deploy.gif)
+## How it Works 🤔
 
-## Installation
-Make sure you have `python version >=3.9.0`, it's always good to follow the [docs](https://docs.textbase.ai/get-started/installation) 👈🏻
-### 1. Through pip
+GIT-BOT is designed as a friendly chatbot that communicates through a user-friendly web interface. Just provide your GitHub profile URL, and GIT-BOT will fetch and analyze your repositories. It uses the incredible OpenAI GPT-3.5 model to provide you with detailed insights and helpful information.💬
+
+## Getting Started 🚀
+
+To start using GIT-BOT, you need to install it and run it locally. Don't worry; it's a straightforward process:
+
+
+
+### Installation ⚙️
+
+Make sure you have **Python version >=3.9.0** installed on your system. You can also follow the [official documentation](https://docs.textbase.ai/get-started/installation) for additional details.
+
+#### Installation via pip
+
 ```bash
 pip install textbase-client
 ```
 
-### 2. Local installation
-Clone the repository and install the dependencies using [Poetry](https://python-poetry.org/) (you might have to [install Poetry](https://python-poetry.org/docs/#installation) first).
+#### Local Installation
 
-For proper details see [here]()
+1. Clone the GIT-BOT repository:
+   
+   ```bash
+   git clone https://github.com/cofactoryai/textbase
+   cd textbase
+   ```
 
-```bash
-git clone https://github.com/cofactoryai/textbase
-cd textbase
-poetry shell
-poetry install
-```
+2. Install the dependencies using [Poetry](https://python-poetry.org/). If you don't have Poetry installed, you can follow the [Poetry installation guide](https://python-poetry.org/docs/#installation).
 
-## Start development server
+   ```bash
+   poetry shell
+   poetry install
+   ```
 
-> If you're using the default template, **remember to set the OpenAI API key** in `main.py`.
+### Running the Bot Locally 🤖
 
-Run the following command:
-- if installed locally
-    ```bash
-    poetry run python textbase/textbase_cli.py test
-    ```
-- if installed through pip
-    ```bash
-    textbase-client test
-    ```
-Response:
-```bash
-Path to the main.py file: examples/openai-bot/main.py # You can create a main.py by yourself and add that path here. NOTE: The path should not be in quotes
-```
-Now go to the link in blue color which is shown on the CLI and you will be able to chat with your bot!
-![Local UI](assets/test_command.png)
+To chat with GIT-BOT and analyze your GitHub profile, follow these steps:
 
-### `Other commands have been mentioned in the documentaion website.` [Have a look](https://docs.textbase.ai/usage) 😃!
+- If you've installed GIT-BOT locally:
 
+   ```bash
+   poetry run python main.py
+   ```
 
-## Contributions
+- If you've installed GIT-BOT through pip:
 
-Contributions are welcome! Please open an issue or create a pull request.
+   ```bash
+   textbase-client test
+   ```
+
+You'll receive a response with a path to your `main.py` file.
+
+## Feel Free to Contribute 🚀
+
+We welcome contributions from the open-source community. If you'd like to contribute to GIT-BOT, here are some ways you can get involved:
+
+- Improve the chatbot's analysis algorithms.
+- Enhance the user interface for a better user experience.
+- Add support for more data sources and analysis options.
+- Bug fixes and performance optimizations.
+- Documentation improvements.
+
+To contribute, please fork this repository, make your changes, and submit a pull request. We appreciate your contributions!
+
+## Future Scope 🌟
+
+GIT-BOT is an evolving project with many possibilities for improvement and expansion. Here are some ideas for future enhancements:
+
+- Integrate more AI models for advanced analysis.
+- Provide more detailed insights into GitHub profiles.
+- Support analysis of other code hosting platforms.
+- Develop a web-based dashboard for a richer user experience.
+- Expand to analyze profiles on other social coding platforms.
+- Implement SMS and chat platform integrations for wider accessibility.
+- Let users be able to ask questions from their repositories.
+
+We're excited about the potential of GIT-BOT and welcome ideas and contributions to make it even better!
+
+## License 📜
+
+This project is licensed under the MIT License. You can find the details in the [LICENSE](LICENSE) file.
+
+## Acknowledgments 🙌
+
+A big shoutout to TextBase for the base UI to make chatbots so easily and  OpenAI for providing the powerful GPT-3.5 model that drives the intelligent responses of GIT-BOT!
+
+## Contact 📧
+
+Have questions or feedback? Reach out to us at hs104208@email.com. We're here to help!
+
+Now you're all set to dive into your GitHub profile and explore it with GIT-BOT! Enjoy analyzing your repositories and have fun chatting with your AI-powered assistant! 🚀🤖
